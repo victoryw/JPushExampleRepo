@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2110F1B724849105B4E599 /* libPods-JPushExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7B8E79BB39086971E9C3FB /* libPods-JPushExample.a */; };
 		E10BB1E41ED466540091C60B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E10BB1E31ED466540091C60B /* main.m */; };
 		E10BB1E71ED466540091C60B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E10BB1E61ED466540091C60B /* AppDelegate.m */; };
 		E10BB1EA1ED466540091C60B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10BB1E91ED466540091C60B /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60780A6774BC9537C2BABC5 /* Pods-JPushExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPushExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPushExample/Pods-JPushExample.release.xcconfig"; sourceTree = "<group>"; };
+		CD7B8E79BB39086971E9C3FB /* libPods-JPushExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPushExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0C65BAA391CC2104C2F849C /* Pods-JPushExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPushExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPushExample/Pods-JPushExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E10BB1DF1ED466540091C60B /* JPushExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPushExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10BB1E31ED466540091C60B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E10BB1E51ED466540091C60B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2110F1B724849105B4E599 /* libPods-JPushExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B290AF8A0187D09FA13B13C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD7B8E79BB39086971E9C3FB /* libPods-JPushExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E10BB1D61ED466540091C60B = {
 			isa = PBXGroup;
 			children = (
 				E10BB1E11ED466540091C60B /* JPushExample */,
 				E10BB1E01ED466540091C60B /* Products */,
+				FB123A0C1CE178E97DAFCA44 /* Pods */,
+				3B290AF8A0187D09FA13B13C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FB123A0C1CE178E97DAFCA44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0C65BAA391CC2104C2F849C /* Pods-JPushExample.debug.xcconfig */,
+				B60780A6774BC9537C2BABC5 /* Pods-JPushExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E10BB1F61ED466540091C60B /* Build configuration list for PBXNativeTarget "JPushExample" */;
 			buildPhases = (
+				F7FB6AEEDFCFA41BE126DAFC /* [CP] Check Pods Manifest.lock */,
 				E10BB1DB1ED466540091C60B /* Sources */,
 				E10BB1DC1ED466540091C60B /* Frameworks */,
 				E10BB1DD1ED466540091C60B /* Resources */,
+				1F86A602AACF54393AAC87C9 /* [CP] Embed Pods Frameworks */,
+				1F1460405685A812974895B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1460405685A812974895B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPushExample/Pods-JPushExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F86A602AACF54393AAC87C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPushExample/Pods-JPushExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7FB6AEEDFCFA41BE126DAFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E10BB1DB1ED466540091C60B /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		E10BB1F71ED466540091C60B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C65BAA391CC2104C2F849C /* Pods-JPushExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JPushExample/Info.plist;
@@ -283,6 +359,7 @@
 		};
 		E10BB1F81ED466540091C60B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60780A6774BC9537C2BABC5 /* Pods-JPushExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JPushExample/Info.plist;
