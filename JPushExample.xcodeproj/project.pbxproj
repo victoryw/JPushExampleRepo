@@ -30,6 +30,7 @@
 		E10BB1EE1ED466540091C60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10BB1F11ED466540091C60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E10BB1F31ED466540091C60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E160686C1ED46E660011F77F /* JPushExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JPushExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		E10BB1E11ED466540091C60B /* JPushExample */ = {
 			isa = PBXGroup;
 			children = (
+				E160686C1ED46E660011F77F /* JPushExample.entitlements */,
 				E10BB1E51ED466540091C60B /* AppDelegate.h */,
 				E10BB1E61ED466540091C60B /* AppDelegate.m */,
 				E10BB1E81ED466540091C60B /* ViewController.h */,
@@ -137,7 +139,13 @@
 				TargetAttributes = {
 					E10BB1DE1ED466540091C60B = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = U245C77W53;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -350,10 +358,16 @@
 			baseConfigurationReference = E0C65BAA391CC2104C2F849C /* Pods-JPushExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JPushExample/JPushExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yan Wang (T3WR335SDH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U245C77W53;
 				INFOPLIST_FILE = JPushExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -362,10 +376,16 @@
 			baseConfigurationReference = B60780A6774BC9537C2BABC5 /* Pods-JPushExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JPushExample/JPushExample.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U245C77W53;
 				INFOPLIST_FILE = JPushExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -388,6 +408,7 @@
 				E10BB1F81ED466540091C60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
