@@ -1,0 +1,16 @@
+//
+//  dev.xcconfig
+//  JPushExample
+//
+//  Created by yan wang on 5/25/17.
+//  Copyright © 2017 yan wang. All rights reserved.
+//
+#include "Pods/Target Support Files/Pods-JPushExample/Pods-JPushExample.debug.xcconfig"
+//:configuration = Debug
+PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample
+
+//:configuration = Release
+PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample
+
+//:configuration = add-hoc
+PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample
