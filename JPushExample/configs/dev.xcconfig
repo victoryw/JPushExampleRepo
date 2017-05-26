@@ -14,3 +14,18 @@ PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample
 
 //:configuration = add-hoc
 PRODUCT_BUNDLE_IDENTIFIER = victoryw.JPushExample
+
+
+//:configuration = Debug
+PROVISIONING_PROFILE_SPECIFIER = match Development victoryw.JPushExample
+
+//:completeSettings = none
+//:configuration = Debug
+CODE_SIGN_IDENTITY = iPhone Developer: Yan Wang (T3WR335SDH)
+//:configuration = Debug
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer: Yan Wang (T3WR335SDH)
+
+
+
+
+
